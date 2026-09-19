@@ -31,6 +31,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#tooling">Lab</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
@@ -79,30 +80,86 @@
             </div>
 
             <div class="hero-visual">
-                <div class="schematic-board">
-                    <div class="grid-overlay"></div>
-                    
-                    <!-- IC Package -->
-                    <div class="ic-body">
-                        <div class="ic-notch"></div>
-                        <span class="ic-label">LPC2129</span>
-                        <span class="ic-sub">ARM7TDMI-S</span>
+                <div class="chip-scene" id="chipScene" aria-label="Animated 3D embedded microcontroller visualization">
+                    <div class="scene-glow"></div>
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <span class="particle particle-1"></span>
+                    <span class="particle particle-2"></span>
+                    <span class="particle particle-3"></span>
+                    <span class="particle particle-4"></span>
+
+                    <div class="chip-shadow"></div>
+
+                    <div class="chip-wrap">
+                        <div class="chip" id="heroChip">
+                            <div class="chip-face chip-top">
+                                <div class="chip-corner corner-tl"></div>
+                                <div class="chip-corner corner-tr"></div>
+                                <div class="chip-corner corner-bl"></div>
+                                <div class="chip-corner corner-br"></div>
+
+                                <div class="chip-notch"></div>
+                                <div class="chip-logo">V</div>
+
+                                <div class="chip-name">ARM CORE</div>
+                                <div class="chip-model">32-BIT EMBEDDED PROCESSOR</div>
+                                <div class="chip-detail">RISC • EMBEDDED • REAL-TIME</div>
+
+                                <div class="die-window">
+                                    <span class="die-line line-a"></span>
+                                    <span class="die-line line-b"></span>
+                                    <span class="die-line line-c"></span>
+                                    <span class="die-core">V M</span>
+                                </div>
+
+                                <div class="chip-code">ARM • MCU SYSTEMS</div>
+                                <div class="chip-sheen"></div>
+                                <div class="chip-scan"></div>
+                            </div>
+
+                            <div class="chip-face chip-front"></div>
+                            <div class="chip-face chip-right"></div>
+
+                            <div class="chip-pins pins-left">
+                                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                            </div>
+                            <div class="chip-pins pins-right">
+                                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                            </div>
+                            <div class="chip-pins pins-top">
+                                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                            </div>
+                            <div class="chip-pins pins-bottom">
+                                <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Traces & Buses -->
-                    <div class="trace trace-top-left"></div>
-                    <div class="trace trace-top-right"></div>
-                    <div class="trace trace-bot-left"></div>
-                    <div class="trace trace-bot-right"></div>
+                    <div class="signal signal-can">
+                        <span class="signal-dot"></span>
+                        <span>CAN</span>
+                    </div>
+                    <div class="signal signal-spi">
+                        <span class="signal-dot"></span>
+                        <span>SPI</span>
+                    </div>
+                    <div class="signal signal-uart">
+                        <span class="signal-dot"></span>
+                        <span>UART</span>
+                    </div>
+                    <div class="signal signal-i2c">
+                        <span class="signal-dot"></span>
+                        <span>I²C</span>
+                    </div>
 
-                    <!-- Test Points & Peripherals -->
-                    <div class="test-point tp-1" data-label="CAN_TX"></div>
-                    <div class="test-point tp-2" data-label="SPI_MOSI"></div>
-                    <div class="test-point tp-3" data-label="ADC_IN0"></div>
-                    <div class="test-point tp-4" data-label="UART_RX"></div>
-
-                    <div class="schematic-badge">STATUS: PASS [OK]</div>
+                    <div class="chip-status">
+                        <span class="status-led"></span>
+                        <span>MCU ONLINE</span>
+                    </div>
                 </div>
+            </div>
             </div>
 
         </div>
@@ -225,16 +282,108 @@
     </section>
 
 
+    <!-- ================= LAB TOOLING ================= -->
+
+    <section id="tooling" class="section tooling-section">
+        <div class="section-heading">
+            <span class="section-tag">02 / LAB</span>
+            <h2>Engineering Lab &amp; Prototyping</h2>
+            <p class="section-intro">
+                Practical tools and hands-on methods used across firmware development, circuit prototyping,
+                measurement, validation and rapid hardware iteration.
+            </p>
+        </div>
+
+        <div class="tooling-grid">
+            <article class="tooling-card">
+                <div class="tooling-card-top">
+                    <span class="tooling-number">01</span>
+                    <span class="tooling-line"></span>
+                </div>
+                <h3>Development &amp; Design</h3>
+                <p>Software and design tools used to build, simulate and iterate embedded systems.</p>
+                <div class="tool-list">
+                    <span>VS Code</span>
+                    <span>Arduino IDE</span>
+                    <span>KiCad</span>
+                    <span>Keil &mu;Vision</span>
+                    <span>Proteus</span>
+                </div>
+            </article>
+
+            <article class="tooling-card">
+                <div class="tooling-card-top">
+                    <span class="tooling-number">02</span>
+                    <span class="tooling-line"></span>
+                </div>
+                <h3>Measurement &amp; Validation</h3>
+                <p>Bench-level inspection and practical validation of electrical and fluid-system behaviour.</p>
+                <div class="tool-list">
+                    <span>Digital Multimeter</span>
+                    <span>Clamp Meter</span>
+                    <span>Soldering</span>
+                    <span>Graduated Beakers</span>
+                </div>
+            </article>
+
+            <article class="tooling-card">
+                <div class="tooling-card-top">
+                    <span class="tooling-number">03</span>
+                    <span class="tooling-line"></span>
+                </div>
+                <h3>Rapid Prototyping</h3>
+                <p>Fast hardware iteration from concept to working prototype using accessible development platforms.</p>
+                <div class="tool-list">
+                    <span>Arduino Boards</span>
+                    <span>Sensor Modules</span>
+                    <span>Bambu Lab 3D Printing</span>
+                    <span>Circuit Prototyping</span>
+                </div>
+            </article>
+
+            <article class="tooling-card tooling-card-accent">
+                <div class="tooling-card-top">
+                    <span class="tooling-number">04</span>
+                    <span class="tooling-line"></span>
+                </div>
+                <h3>AI-Assisted Engineering</h3>
+                <p>AI used as a practical engineering aid for exploring ideas, debugging concepts and accelerating prototype iterations.</p>
+                <div class="tool-list">
+                    <span>AI Prototyping</span>
+                    <span>Prompt Design</span>
+                    <span>Technical Research</span>
+                    <span>Concept Exploration</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
     <!-- ================= EXPERIENCE ================= -->
 
-    <section id="experience" class="section">
+    <section id="experience" class="section experience-section">
+        <div class="compliance-highlight">
+            <div>
+                <span class="compliance-label">QUALITY &amp; REGULATORY EXPOSURE</span>
+                <h3>Medical Device Development Environment</h3>
+            </div>
+            <div class="compliance-items">
+                <span>ISO Participation</span>
+                <span>CDSCO Participation</span>
+                <span>Quality &amp; Documentation</span>
+            </div>
+            <p>
+                Participated in ISO- and CDSCO-related activities within the medical-device development environment,
+                gaining exposure to quality, documentation and regulatory considerations alongside engineering work.
+            </p>
+        </div>
+
         <div class="section-heading">
             <span class="section-tag">TRACK RECORD</span>
             <h2>Work Experience</h2>
         </div>
 
         <div class="timeline">
-            <!-- R&D Role -->
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -247,19 +396,18 @@
                     </div>
 
                     <p class="role-overview">
-                        Tasked with low-level embedded software engineering and validation for medical-grade hardware instruments.
+                        Embedded development, hardware integration and practical validation work within a medical-device R&amp;D environment.
                     </p>
 
                     <ul class="timeline-bullets">
                         <li>Developed clean, modular <strong>Embedded C firmware</strong> for real-time sensor processing and system control.</li>
-                        <li>Interfaced precision medical-device transducers (pressure, current, and thermal sensors) via ADC, SPI, and I²C interfaces.</li>
-                        <li>Authored hardware-in-the-loop (HIL) test routines to validate system fail-safes and battery-monitoring routines.</li>
-                        <li>Utilized digital multimeters and mixed-signal oscilloscopes to identify hardware bugs, signal noise, and timing glitches.</li>
+                        <li>Interfaced precision medical-device transducers through ADC, SPI and I&sup2;C interfaces.</li>
+                        <li>Worked on hardware-in-the-loop style validation routines for system protection and battery-monitoring behaviour.</li>
+                        <li>Used bench measurement equipment to investigate hardware behaviour, signal quality and timing issues.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Vector India Training -->
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -272,14 +420,14 @@
                     </div>
 
                     <p class="role-overview">
-                        Comprehensive professional curriculum in systems programming, microcontroller architectures, and kernel communication.
+                        Practical training in embedded C, microcontroller architectures, device-level programming and Linux systems.
                     </p>
 
                     <ul class="timeline-bullets">
-                        <li>Completed intensive practical programming in C, low-level data structures, and Embedded C bare-metal register drivers.</li>
-                        <li>Configured peripheral drivers (GPIO, Timers, PWM, ADC) on <strong>ARM7 (LPC2129)</strong> from hardware reference manuals.</li>
-                        <li>Implemented industrial multi-node communication setups using the CAN 2.0B controller and SPI peripherals.</li>
-                        <li>Studied Linux systems programming, process synchronization, and socket programming with TCP/IP.</li>
+                        <li>Completed intensive programming in C, data structures and Embedded C bare-metal register drivers.</li>
+                        <li>Configured GPIO, timers, PWM and ADC peripherals on <strong>ARM7 (LPC2129)</strong>.</li>
+                        <li>Worked with CAN and SPI communication in embedded multi-node setups.</li>
+                        <li>Studied Linux systems programming and socket programming with TCP/IP.</li>
                     </ul>
                 </div>
             </div>
@@ -355,37 +503,7 @@
                     <span>State Machines</span>
                 </div>
             </article>
-
-            <!-- Project 3 -->
-            <article class="project-card">
-                <div class="project-header">
-                    <span class="project-tag">SYSTEMS BENCH</span>
-                    <span class="project-id">PRJ-03</span>
-                </div>
-
-                <h3>Industrial Peripheral &amp; Bus Verification Suite</h3>
-                <p>
-                    A modular firmware testbed configured to validate transceiver performance and timing tolerances across heterogeneous communication links.
-                </p>
-
-                <div class="project-details">
-                    <h4>Key Engineering Contributions:</h4>
-                    <ul>
-                        <li>Implemented custom bit-banged and register-driven drivers for UART, SPI, and I²C.</li>
-                        <li>Measured bus rise-times and verified signal integrity via digital oscilloscopes.</li>
-                        <li>Configured ring-buffers to prevent packet loss under high baud rates.</li>
-                    </ul>
-                </div>
-
-                <div class="project-tech">
-                    <span>UART</span>
-                    <span>SPI</span>
-                    <span>I²C</span>
-                    <span>CAN</span>
-                    <span>Oscilloscopes</span>
-                </div>
-            </article>
-        </div>
+</div>
     </section>
 
 
@@ -447,6 +565,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="professional-highlights">
+            <div class="section-heading compact-heading">
+                <span class="section-tag">PROFESSIONAL HIGHLIGHTS</span>
+                <h3>Additional Development &amp; Achievements</h3>
+            </div>
+
+            <div class="highlights-cards">
+                <article class="professional-card">
+                    <span class="professional-icon">01</span>
+                    <div>
+                        <h4>Google Prompt Design in Vertex AI</h4>
+                        <p>AI-focused professional development supporting modern prototyping and technical problem exploration.</p>
+                    </div>
+                </article>
+
+                <article class="professional-card">
+                    <span class="professional-icon">02</span>
+                    <div>
+                        <h4>SRISHTI 2019 — National Technical Project Competition</h4>
+                        <p>Participated as a finalist with a project on E-Waste Management Using Machine Learning.</p>
+                    </div>
+                </article>
+
+                <article class="professional-card">
+                    <span class="professional-icon">03</span>
+                    <div>
+                        <h4>KELTRON Internship Program</h4>
+                        <p>Completed an internship program at KELTRON in 2019, adding early industry exposure to the engineering profile.</p>
+                    </div>
+                </article>
+
+                <article class="professional-card">
+                    <span class="professional-icon">04</span>
+                    <div>
+                        <h4>Image Processing with Python</h4>
+                        <p>Completed a hands-on workshop covering practical image-processing concepts and Python-based experimentation.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
 
@@ -461,8 +620,8 @@
             </p>
 
             <div class="contact-actions">
-                <a href="mailto:vivekvm.in@gmail.com" class="btn primary-btn email-btn">
-                    <span>Send Email: vivekvm.in@gmail.com</span>
+                <a href="mailto:vmvivek2000@gmail.com" class="btn primary-btn email-btn">
+                    <span>Send Email: vmvivek2000@gmail.com</span>
                 </a>
             </div>
 
@@ -472,6 +631,9 @@
                 </a>
                 <a href="https://github.com/vivek-m-lab" target="_blank" rel="noopener noreferrer">
                     &rarr; GitHub Portfolio
+                </a>
+                <a href="https://www.hackerrank.com/profile/vivekvm_in" target="_blank" rel="noopener noreferrer">
+                    &rarr; HackerRank Profile
                 </a>
             </div>
         </div>
